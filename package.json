@@ -1,0 +1,46 @@
+{
+   "name": "gtam-21",
+   "version": "0.0.0",
+   "description": "GTAMarathon 2021",
+   "homepage": "http://www.twitch.tv/GTAMarathon",
+   "author": {
+      "name": "Gaël",
+      "email": "gaeldemarseille@gmail.com"
+   },
+   "files": [
+      "dashboard",
+      "graphics",
+      "extension.js",
+      "extension"
+   ],
+   "nodecg": {
+      "compatibleRange": "^1.1.1",
+      "dependencies": [
+         "speedcontrol/nodecg-speedcontrol:~2.0"
+      ],
+      "dashboardPanels": [
+         {
+            "name": "IntermissionDashboard",
+            "title": "IntermissionDashboard",
+            "width": 4,
+            "file": "IntermissionDashboard.html",
+            "headerColor": "#525F78",
+			"workspace": "OBS"
+         }
+      ],
+      "graphics": [
+         {
+            "file": "index.html",
+            "width": 1920,
+            "height": 1080
+         }
+      ]
+   },
+   "dependencies": {
+      "big-text.js-patched": "^1.0.1",
+      "jquery": "^3.6.0",
+      "jquery-ui-dist": "^1.12.1",
+      "nodecg-utility-obs": "^6.0.0",
+      "obs-websocket-js": "^4.0.2"
+   }
+}

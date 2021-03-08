@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <script type='text/javascript' src='/bundles/gtam-21/node_modules/obs-websocket-js/dist/obs-websocket.js'></script>
+    <script type='text/javascript' src='IntermissionDashboard.js'></script>
+    <title>Intermission Dashboard</title>
+
+    <style>
+        body{
+            margin: 3px;
+        }
+        
+        button {
+            border-radius: 4px;
+            border-width: 0px;
+            background-color: rgb(39, 39, 39);
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            font-family: Roboto, sans-serif;
+            font-size: 14px;
+            height: 48px;
+            padding: 0px 5px 0px 5px;
+            width: calc(100% - 125px);
+        }
+
+        button:disabled {
+            color: rgba(255, 255, 255, .4) !important;
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="display: flex !important;">
+        <button id='intermissionButton' disabled onclick='switchToIntermission()'
+            style='width: 100%; letter-spacing: 1px;white-space: pre; margin-right: 5px;'></button>
+        <button id='obsButton' type="button" onclick='connectToObs()' style='width: 120px;'>Connect to OBS</button>
+    </div>
+</body>
